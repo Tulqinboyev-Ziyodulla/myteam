@@ -1,0 +1,173 @@
+.next {
+    width: 100%;
+    padding: 140px 165px;
+    background: $bg-mask2;
+
+    .next__wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+
+        .next__suptitle {
+            width: 100%;
+            text-align: center;
+
+            p {
+                font-size: 48px;
+                font-weight: 700;
+                color: #fff;
+            }
+        }
+
+        .next__block {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 35px;
+
+            .next__card {
+                min-width: 30%;
+                padding: 32px 24px;
+                background: #012f34;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 16px;
+
+                .next__img {
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        width: 64px;
+                        height: 64px;
+                    }
+                }
+
+                .next__name {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    align-items: center;
+
+                    p:nth-child(1) {
+                        font-size: 18px;
+                        color: #79c8c7;
+                        font-weight: 700;
+                    }
+
+                    p:nth-child(2) {
+                        font-size: 13px;
+                        color: #fff;
+                    }
+
+                    .icons {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                }
+
+                .next__btn {
+                    width: 100%;
+                    display: flex;
+                    position: relative;
+
+                    button {
+                        position: absolute;
+                        bottom: -60px;
+                        left: 50%;
+                        translate: (-50%);
+                        width: 56px;
+                        height: 56px;
+                        border-radius: 50%;
+                        border: none;
+                        background: #f67e7e;
+                        font-size: 34px;
+                        font-weight: 700;
+                        color: #012f34;
+                        transition: .5s;
+
+                        &:hover {
+                            cursor: pointer;
+                            background: #79C8C7;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .next {
+        padding: 100px 98px;
+        display: flex;
+        justify-content: center;
+
+        .next__wrapper {
+            width: 100%;
+
+            .next__suptitle {
+                p {
+                    font-size: 32px;
+                }
+            }
+
+            .next__block {
+                .next__card {
+                    width: 46%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .next {
+        padding: 88px 24px;
+        display: flex;
+        justify-content: center;
+
+        .next__wrapper {
+
+            .next__suptitle {
+                p {
+                    font-size: 32px;
+                }
+            }
+
+            .next__block {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .next {
+        padding: 88px 24px;
+        display: flex;
+        justify-content: center;
+
+        .next__wrapper {
+
+            .next__suptitle {
+                p {
+                    font-size: 32px;
+                }
+            }
+
+            .next__block {
+                justify-content: center;
+
+                .next__card {
+                    width: 250px;
+                }
+            }
+        }
+    }
+}

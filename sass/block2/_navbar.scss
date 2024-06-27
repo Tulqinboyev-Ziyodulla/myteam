@@ -1,0 +1,141 @@
+.navbar {
+    width: 100%;
+    padding: 73px 0;
+    background: $bg-mask;
+
+    .navbar__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .navbar__content {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+
+            p {
+                font-weight: 600;
+                color: $bg-white;
+            }
+        }
+
+        .navbar__btn {
+            display: flex;
+            align-items: center;
+
+            i {
+                display: none;
+                font-size: 24px;
+                color: $bg-white;
+
+                .navbar__block {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 70%;
+                    background: $bg-white;
+                    height: 90vh;
+                    background: #2C6269;
+                    display: none;
+
+                    .navbar__collection {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        padding: 20px;
+
+                        button {
+                            width: 153px;
+                            height: 48px;
+                            border-radius: 50px;
+                            background: transparent;
+                            border: 1px solid $bg-white;
+                            color: $bg-white;
+                            transition: .2s;
+
+                            &:hover {
+                                cursor: pointer;
+                                background: $bg-white;
+                                color: $bg-mask;
+                            }
+
+                            &:active {
+                                transform: scale(.9);
+                            }
+                        }
+
+                        i {
+                            text-align: end;
+                            color: $bg-white;
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+
+                        li {
+                            font-weight: 600;
+                            color: $bg-white;
+                        }
+                    }
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            i:active {
+                .navbar__block {
+                    display: block;
+
+                }
+            }
+
+            button {
+                width: 153px;
+                height: 48px;
+                border-radius: 50px;
+                background: transparent;
+                border: 2px solid $bg-white;
+                color: $bg-white;
+                transition: .2s;
+
+                &:hover {
+                    cursor: pointer;
+                    background: $bg-white;
+                    color: $bg-mask;
+                }
+
+                &:active {
+                    transform: scale(.9);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media(max-width:700px) {
+    .navbar {
+        .navbar__wrapper {
+            .navbar__content {
+                p {
+                    display: none;
+                }
+            }
+
+            .navbar__btn {
+                i {
+                    display: block;
+                }
+
+                button {
+                    display: none;
+                }
+            }
+        }
+    }
+}

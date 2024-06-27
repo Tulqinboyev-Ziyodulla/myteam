@@ -1,0 +1,123 @@
+.hero {
+    margin-top: 100px;
+
+    &__word {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .hero__title {
+            max-width: 550px;
+    
+            h2 {
+                color: $bg-white;
+                font-size: 100px;
+                
+            }
+    
+            span {
+                color: $bg-red;
+            }
+        }
+    
+        .hero__text {
+
+            .rectangle {
+                width: 50px;
+                height: 4px;
+                background-color: $bg-blue;
+                margin-bottom: 50px;
+            }
+    
+            p {
+                max-width: 380px;
+                color: $bg-white;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+
+    }
+    
+}
+
+
+@media(max-width: 1000px) {
+    .hero {
+        
+        &__word {
+
+            .hero__title {
+
+                h2 {
+                    font-size: 75px;
+                    max-width: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 850px) {
+    .hero {
+        
+        &__word {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            .hero__title {
+
+                h2 {
+                    font-size: 75px;
+                    max-width: 400px;
+                }
+            }
+
+            .hero__text {
+
+                .rectangle {
+                    display: none;
+                }
+
+                p {
+                    margin-top: 20px;
+                    max-width: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 450px) {
+    .hero {
+        
+        &__word {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            .hero__title {
+
+                h2 {
+                    font-size: 45px;
+                    max-width: 400px;
+                }
+            }
+
+            .hero__text {
+
+                .rectangle {
+                    display: none;
+                }
+
+                p {
+                    margin-top: 20px;
+                    font-size: 16px;
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+}
